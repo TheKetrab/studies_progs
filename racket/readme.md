@@ -2,7 +2,7 @@
 @ metody programowania 2018,
 racket - funkcyjny język, wersja Scheme (Lisp)
 
-#### 01-newton-cube-root
+### # 01-newton-cube-root
 przybliżanie pierwiastka trzeciego stopnia za pomocą [(x/y^2) + 2y] / 3
 
 #### 02a-continued-fraction
