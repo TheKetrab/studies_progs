@@ -2,7 +2,7 @@
 Program symuluje zachowanie zewnętrznego routera jakiejś sieci. Odpalany na wielu różnych komputerach/maszynach połączonych ze sobą, czyta IP swoich sąsiadów i dodaje ich do swojej tablicy osiągalnych sieci. Utrzymuje informacje o tych sieciach używając algorytmu wektorów odległości (wysyła swoją tablicę odległości do sąsiadów i odbiera info od innych). Wysyłane pakiety idą protokołem UDP. Router reaguje wyłączenie którejś karty sieciowej bądź sąsiada (maszyny) i regularnie próbuje ponownie nawiązać połączenie. Przykład użycia został opisany w <a href="https://github.com/TheKetrab/University/blob/master/Sieci%20Komputerowe/router/tests/README.md">router/tests/README.md</a>
 
 ## traceroute
-Program to symuluje wykonanie linuksowego traceroute'a. Wysyła po 3 żądania z coraz większym TTL (Time To Live w icmp_header) i mierzy średni RRT (Round Trip Time) ile czasu czekaliśmy na odpowiedź (echo reply).
+Program symuluje wykonanie linuksowego traceroute'a. Wysyła po 3 żądania z coraz większym TTL (Time To Live w icmp_header) i mierzy średni RRT (Round Trip Time) ile czasu czekaliśmy na odpowiedź (echo reply).
 
 Przykład użycia:
 ```
@@ -18,3 +18,6 @@ $ sudo ./traceroute 156.17.254.113
 > 8. 212.191.224.106 35.16 ms
 > 9. 156.17.254.113 41.29 ms
 ```
+
+## transport
+Program symuluje ramkę TCP (algorytm okna przesuwnego) wysyłając odpowiednie żądania do serwera przez protokół UDP. Program pobiera plik z serwera i zapisuje bajty do pliku podanego na wejście.
