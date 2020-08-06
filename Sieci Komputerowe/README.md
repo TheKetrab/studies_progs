@@ -21,3 +21,23 @@ $ sudo ./traceroute 156.17.254.113
 
 ## transport
 Program symuluje ramkę TCP (algorytm okna przesuwnego) wysyłając odpowiednie żądania do serwera przez protokół UDP. Program pobiera plik z serwera i zapisuje bajty do pliku podanego na wejście.
+
+## webserver
+Jest to mój własny server HTTP napisany w C. Użycie:
+```
+             PORT  KATALOG 
+ ./webserver 8888 webpages/ 
+```
+W katalogu umieścić folder o nazwie hosta, a w środku zasoby oraz index.html
+Przykład:
+```
+--webserver
+  |--localhost
+     |--index.html
+     |--plik.txt
+     |--file.bin
+     |--css
+        |--style.css
+```
+Teraz można połączyć się przeglądarką z serwerem:
+localhost:8888/index.html
